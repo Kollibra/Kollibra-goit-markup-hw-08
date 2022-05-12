@@ -15,10 +15,12 @@ $color-icon: #AFB1B8;
 *::after {
     box-sizing: border-box;
 }
+
+
 .container {
     margin-right: auto;
     margin-left: auto;
-    width: 1200px;
+    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -48,7 +50,7 @@ img {
     height: auto;
     display: block;
 }
-.section {
+/*.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }

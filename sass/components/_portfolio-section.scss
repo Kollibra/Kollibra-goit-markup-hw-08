@@ -1,4 +1,4 @@
-.portfolio-section {
+/*.portfolio-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -28,7 +28,7 @@
     margin-bottom: 0;
 }
 
-/* Кнопки портфолио */
+/* Кнопки портфолио 
 .portfolio-button__label {
     background-color: $background-button-color;
     color: var(--title-text-color);
@@ -64,7 +64,7 @@
 .portfolio-button__list .portfolio-button__item+.portfolio-button__item {
     margin-left: 8px;
 }
-/* Портфолио overlay */
+/* Портфолио overlay 
 .overlay {
     position: absolute;
     top: 0;
