@@ -11,16 +11,47 @@
     padding-left: 15px;
     padding-right: 15px
 }
+/* Контейнер навигация и адресса в одном блоке*/
+.menu-cotainer {
+    display: none;
+}
+
+.menu-button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    
+    
+}
+.menu-container__icon{
+    display: block;
+    align-items: center;
+}
+.menu-button .menu-container__iconcross {
+    display: none;
+}
+.menu-button.is-open .menu-container__iconcross {
+    display: block;
+}
+.menu-button.is-open .menu-container__iconmenu {
+    display: none;
+}
+/*.menu-button .menu-container__iconmenu{
+    display: block;
+}*/
+
+
+
+
 
 
 .site-nav__list {
-   /* display: flex;*/
-    @media  screen and (min-width 480px) {
-        display: none;
-       
-    }
-        
-    
+    display: flex;
+  
+  
 }
 .site-nav__list .site-nav__item {
     color: $accent-text-color;
