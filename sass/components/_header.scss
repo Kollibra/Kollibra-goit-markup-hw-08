@@ -14,7 +14,13 @@
 
 
 .site-nav__list {
-    display: flex;
+   /* display: flex;*/
+    @media  screen and (min-width 480px) {
+        display: none;
+       
+    }
+        
+    
 }
 .site-nav__list .site-nav__item {
     color: $accent-text-color;
