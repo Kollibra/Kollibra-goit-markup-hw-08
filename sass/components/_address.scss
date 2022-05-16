@@ -1,9 +1,9 @@
 .address {
-    margin-top: 20px;
+   /* margin-top: 20px;*/
 
-    & .address__item+.address__item {
-        margin-top: 9px;
-    }
+    /*& .address__item+.address__item {
+       /* margin-top: 9px;
+    }*/
 
     &__link-map {
         color: $white-text-color;

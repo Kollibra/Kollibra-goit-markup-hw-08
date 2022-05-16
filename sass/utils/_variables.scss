@@ -16,11 +16,22 @@ $color-icon: #AFB1B8;
     box-sizing: border-box;
 }
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+
+    margin: 0px auto;
+    padding: 0px 15px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: calc(480px - 18px);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc(768px - 18px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc(1200px - 18px);
+    }
 }
 ul {
     list-style: none;
@@ -48,10 +59,10 @@ img {
     height: auto;
     display: block;
 }
-.section {
-    padding-top: 94px;
+/*.section {
+   /* padding-top: 94px;
     padding-bottom: 94px;
-}
+}*/
 /* Скрытый заголовок*/
 .visually-hidden {
     position: absolute;

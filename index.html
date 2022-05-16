@@ -25,13 +25,18 @@
       <div class="header-container">
         <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
         <!--Моб меню-->
-        <button type="button" class="menu-button is-open" data-menu-button>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button
+        >
           <svg
             class="menu-container__icon"
             height="40"
             width="40"
             aria-label="Переключатель мобильного меню"
-            aria-expanded="false"
           >
             <use
               class="menu-container__iconcross"
@@ -47,6 +52,7 @@
             ></use>
           </svg>
         </button>
+        <div class="menu data-menu" id="menu">Контент меню</div>
         <!-- Навигация -->
         <div class="menu-cotainer" id="menu-cotainer" data-menu>
           <nav class="site-nav">
@@ -89,13 +95,15 @@
     <main>
       <!--Секция герой-->
       <section class="hero">
-        <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero__button" data-modal-open>
-          Заказать услугу
-        </button>
+        <div class="hero-container">
+          <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
       </section>
       <!--Секция наши преимущества (картинка, надпись, абзац)-->
-      <section class="advantages-section">
+      <section class="">
         <div class="advantages-container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-cotainer__list">

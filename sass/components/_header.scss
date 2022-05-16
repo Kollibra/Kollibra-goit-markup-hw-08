@@ -1,34 +1,53 @@
 .header {
     border-bottom: 1px solid $border-bottom;
-    
+        
 }
 .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
     margin-right: auto;
     margin-left: auto;
-    width: 1200px;
+    text-align: center;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
+    height: 60px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        width: 1200px;
+             }
 }
+
 /* Контейнер навигация и адресса в одном блоке*/
 .menu-cotainer {
     display: none;
 }
 
 .menu-button {
-    display: block;
-    margin: 0;
-    padding: 0;
+        display: inline-block;
+        text-align: center;
+
     border: none;
     background-color: transparent;
     text-align: center;
+    width: 40px;
+    height: 40px;
     
     
 }
 .menu-container__icon{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
+    text-align: center;
 }
 .menu-button .menu-container__iconcross {
     display: none;
@@ -43,23 +62,30 @@
     display: block;
 }*/
 
+.menu {
+    position: absolute;
+    background-color: aqua;
+    display: block;
+    top: 100%;
+    left: 0;
+    width: 100%;
+     
+}
 
 
 
 
-
-.site-nav__list {
+/*.site-nav__list {
     display: flex;
   
-  
-}
+}*/
 .site-nav__list .site-nav__item {
     color: $accent-text-color;
     position: relative;
 }
 
 .site-nav__item {
-    margin-right: 50px;
+   /* margin-right: 50px;*/
     &:last-child {
             margin-right: 0;
         }
@@ -116,14 +142,15 @@
 }
 
 .site-contact__link {
-    display: flex;
+    /*display: flex;
+    align-items: center;*/
     color: $main-text-color;
     font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    align-items: center;
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
     padding-bottom: 32px;

@@ -1,14 +1,14 @@
 .team-section {
     background-color: $background-button-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
+   /* padding-top: 94px;
+    padding-bottom: 94px;*/
 }
 .team-section__maintitle {
     color: $title-text-color;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+   /* margin-bottom: 50px;*/
 }
 .team-section__title {
     color: $title-text-color;
@@ -18,10 +18,10 @@
     text-align: center;
     margin-bottom: 10px;
 }
-.team-section__list {
+/*.team-section__list {
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; 
+}*/
 .team-section__list .team-section__item {
     width: 270px;
 }
