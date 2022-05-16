@@ -65,7 +65,7 @@
 .menu {
     position: absolute;
     background-color: aqua;
-    display: block;
+    display: none;
     top: 100%;
     left: 0;
     width: 100%;
@@ -75,10 +75,11 @@
 
 
 
-/*.site-nav__list {
+.site-nav__list {
+    
     display: flex;
   
-}*/
+}
 .site-nav__list .site-nav__item {
     color: $accent-text-color;
     position: relative;

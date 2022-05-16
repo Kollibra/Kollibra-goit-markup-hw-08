@@ -1,24 +1,19 @@
-.advantages-section {
+/*.advantages-section {
     padding-top: 94px;
     padding-bottom: 94px;
     
-}
+}*/
 .advantages-container {
     margin-right: auto;
     margin-left: auto;
-    
     padding-left: 15px;
     padding-right: 15px;
     
     @media screen and (min-width: 768px) {
-            display: flex;
-            align-items: center;
             width: 768px;
         }
     
     @media screen and (min-width: 1200px) {
-            display: flex;
-            align-items: center;
             width: 1200px;
         }
 }
