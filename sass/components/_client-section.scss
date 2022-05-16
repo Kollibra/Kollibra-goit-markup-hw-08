@@ -8,9 +8,9 @@
 }
 
 .client-section__image {
-    background-color: blue;
+   
     border: 1px solid $color-icon;
-    width: calc(100%-2 * 30px);
+    width: calc((100% - 2 * 30px) / 2);
     height: 92px;
     border-radius: 4px;
     color: $color-icon;
