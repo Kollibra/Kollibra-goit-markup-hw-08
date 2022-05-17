@@ -87,7 +87,6 @@ img {
 
 .logo__header {
   color: #212121;
-  margin-right: 93px;
 }
 
 .logo__footer {
@@ -187,6 +186,7 @@ img {
   width: 100%;
 }
 
+/*Навигация в шапке*/
 .site-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,10 +310,15 @@ img {
 }
 
 .address {
-  /* margin-top: 20px;*/
-  /*& .address__item+.address__item {
-       /* margin-top: 9px;
-    }*/
+  color: aqua;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address .address__item + .address__item {
+  margin-top: 9px;
 }
 
 .address__link-map {
@@ -660,11 +665,6 @@ img {
   fill: #ffffff;
 }
 
-.client-section {
-  /* padding-top: 94px;
-    padding-bottom: 94px;*/
-}
-
 .client-section__title {
   color: #212121;
   font-size: 36px;
@@ -673,13 +673,7 @@ img {
   margin-bottom: 50px;
 }
 
-/*.client-section__list {
-   /* display: flex;
-    justify-content: space-between;
-}*/
 .client-section__image {
-  /* display: flex;
-    align-items: center;*/
   border: 1px solid #AFB1B8;
   width: calc((100% - 2 * 30px) / 2);
   height: 92px;
@@ -692,6 +686,27 @@ img {
 .client-section__image:hover {
   color: #2196f3;
   border: 1px solid #2196f3;
+}
+
+.client-section__icon {
+  fill: currentColor;
+}
+
+.client-section__icon:hover {
+  fill: currentColor;
+}
+
+.client-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-section__title {
+  color: #212121;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .client-section__icon {
@@ -726,7 +741,7 @@ img {
 }
 
 .distribution-form__input {
-  /* width: 358px;*/
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
