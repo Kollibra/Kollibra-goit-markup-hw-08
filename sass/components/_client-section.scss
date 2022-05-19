@@ -1,4 +1,11 @@
 
+.client-section__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+
+}
 .client-section__title {
     color: $title-text-color;
     font-size: 36px;
@@ -10,7 +17,7 @@
 .client-section__image {
    
     border: 1px solid $color-icon;
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100%/2 -10px);
     height: 92px;
     border-radius: 4px;
     color: $color-icon;
@@ -29,10 +36,7 @@
 }
 
 
-.client-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 .client-section__title {
     color: $title-text-color;
