@@ -1,51 +1,81 @@
-.hero-container {
-    padding-top: 118px;
-    padding-bottom: 118px;
+.hero {
+    max-width: $mobile;
+    background-color: $second-background-color;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1600px;
-    height: auto;
-    @media screen and (min-width: 768px) {
-            width: 768px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-        }
+    padding: 118px 0;
 
-    &__title {
-        color: $white-text-color;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        width: 696px;
-        margin: 0 auto;
+
+    // Mobile background image
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero_background_mobile.jpg);
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        & {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero_background_mobile@2x.jpg);
+        }
     }
+
+
+    // Tablet background image
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero_background_tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/hero_background_tablet@2x.jpg);
+            }
+        }
+    }
+
+    // Desctop background image
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+
+        padding: 200px 0;
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero_background_desktop.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/hero_background_desktop@2x.jpg);
+            }
+        }
+    }
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.hero__button {
-    background-color: $accent-text-color;
-    color: $white-text-color;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
+.hero__title {
+    color: $main-background-color;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
-    cursor: pointer;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
-    margin-top: 30px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto 30px auto;
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 4px 4px $shadow-color;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+
     }
 }
